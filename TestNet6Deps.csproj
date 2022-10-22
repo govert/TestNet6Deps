@@ -13,6 +13,7 @@
 
    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
         <Exec Command="copy $(OutDir)\TestNet6Deps.deps.json $(OutDir)\TestNet6Deps-AddIn64.deps.json" />
+        <Exec Command="copy $(OutDir)\TestNet6Deps.deps.json $(OutDir)\TestNet6Deps-AddIn.deps.json" />
     </Target>
 
 </Project>
